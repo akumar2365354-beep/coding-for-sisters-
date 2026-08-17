@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Raksha Bandhan ❤️</title>
+
+<style>
+
+/* ================= BASIC ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#fff0f5,#ffe4ec,#fff7df);
+    color:#4a1831;
+    overflow-x:hidden;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    box-shadow:0 3px 20px rgba(0,0,0,0.08);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#c2185b;
+}
+
+nav a{
+    text-decoration:none;
+    color:#6a1744;
+    margin-left:20px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#e91e63;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:100px 20px 60px;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero-content{
+    max-width:900px;
+    z-index:5;
+}
+
+.rakhi-icon{
+    font-size:80px;
+    animation:rotateRakhi 5s linear infinite;
+}
+
+@keyframes rotateRakhi{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+.hero h1{
+    font-size:clamp(42px,8vw,85px);
+    color:#c2185b;
+    text-shadow:3px 3px 0 #ffd1df;
+    margin:15px 0;
+}
+
+.hero h2{
+    font-size:clamp(22px,4vw,38px);
+    color:#7b1e4f;
+}
+
+.hero p{
+    font-size:18px;
+    margin:20px auto;
+    max-width:700px;
+    line-height:1.8;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(45deg,#e91e63,#ad1457);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(194,24,91,0.3);
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px) scale(1.03);
+}
+
+
+/* ================= FLOATING ELEMENTS ================= */
+
+.floating{
+    position:absolute;
+    font-size:28px;
+    animation:float 8s infinite ease-in-out;
+    opacity:.7;
+}
+
+.f1{
+    left:8%;
+    top:25%;
+}
+
+.f2{
+    right:10%;
+    top:30%;
+    animation-delay:2s;
+}
+
+.f3{
+    left:15%;
+    bottom:20%;
+    animation-delay:4s;
+}
+
+.f4{
+    right:15%;
+    bottom:15%;
+    animation-delay:1s;
+}
+
+.f5{
+    left:50%;
+    top:15%;
+    animation-delay:3s;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-35px) rotate(15deg);
+    }
+
+}
+
+
+/* ================= SECTION ================= */
+
+section{
+    padding:90px 7%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:42px;
+    color:#c2185b;
+    margin-bottom:15px;
+}
+
+.section-subtitle{
+    text-align:center;
+    margin-bottom:45px;
+    color:#71344f;
+}
+
+
+/* ================= MESSAGE ================= */
+
+.message-container{
+    max-width:850px;
+    margin:auto;
+    background:rgba(255,255,255,.75);
+    padding:40px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(100,30,60,.12);
+    border:2px solid #ffd0df;
+}
+
+.message-container p{
+    font-size:19px;
+    line-height:2;
+    text-align:center;
+}
+
+
+/* =====================================================
+   PHOTO GALLERY
+   ===================================================== */
+
+.gallery{
+
+    display:grid;
+
+    /* Photos ki quantity ke according automatically adjust hoga */
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/* PHOTO CARD */
+
+.photo-card{
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+    overflow:hidden;
+
+}
+
+
+/* HOVER EFFECT */
+
+.photo-card:hover{
+
+    transform:
+    translateY(-10px)
+    rotate(1deg);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18);
+
+}
+
+
+/* IMAGE */
+
+.photo-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    display:block;
+
+    cursor:pointer;
+
+}
+
+
+/* PHOTO TEXT */
+
+.photo-card p{
+
+    text-align:center;
+
+    padding:12px 5px;
+
+    font-weight:bold;
+
+    color:#a41452;
+
+}
+
+
+/* =====================================================
+   IMAGE POPUP / LIGHTBOX
+   ===================================================== */
+
+.lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:5000;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.9);
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:85%;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 0 40px rgba(255,255,255,.3);
+
+    animation:zoomImage .4s ease;
+
+}
+
+
+@keyframes zoomImage{
+
+    from{
+
+        transform:scale(.6);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+
+.close-lightbox{
+
+    position:absolute;
+
+    top:20px;
+
+    right:35px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+}
+
+
+/* ================= LETTER ================= */
+
+.letter-box{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.envelope{
+    width:280px;
+    height:180px;
+    background:#f8b4c8;
+    margin:30px auto;
+    position:relative;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.envelope:hover{
+    transform:scale(1.05);
+}
+
+.envelope::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    border-left:140px solid transparent;
+    border-right:140px solid transparent;
+    border-top:100px solid #e98eaa;
+}
+
+.heart{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    font-size:55px;
+    z-index:3;
+}
+
+.letter{
+    display:none;
+    background:#fffdf5;
+    padding:35px;
+    border-radius:20px;
+    border:3px solid #f5c5d5;
+    line-height:2;
+    font-size:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.letter.show{
+    display:block;
+    animation:openLetter .8s ease;
+}
+
+@keyframes openLetter{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* ================= MEMORY CARDS ================= */
+
+.memories{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:25px;
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+.memory-card{
+
+    padding:30px;
+
+    background:rgba(255,255,255,.8);
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+.memory-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.memory-card span{
+
+    font-size:45px;
+
+}
+
+.memory-card h3{
+
+    margin:15px 0;
+
+    color:#c2185b;
+
+}
+
+
+/* ================= SURPRISE ================= */
+
+.surprise{
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #ffe0eb,
+    #fff2c7
+    );
+
+    border-radius:35px;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:50px 20px;
+
+}
+
+#surpriseText{
+
+    display:none;
+
+    margin-top:30px;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    color:#c2185b;
+
+    animation:pop .7s ease;
+
+}
+
+@keyframes pop{
+
+    0%{
+        transform:scale(.5);
+        opacity:0;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+
+/* ================= MUSIC BUTTON ================= */
+
+.music-btn{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:60px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#c2185b;
+
+    color:white;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+    z-index:1000;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.2);
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    background:#721b47;
+
+    color:white;
+
+}
+
+footer span{
+
+    color:#ffb6ce;
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .memories{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    nav{
+
+        padding:12px 5%;
+
+    }
+
+    nav div:last-child{
+
+        display:none;
+
+    }
+
+    section{
+
+        padding:70px 5%;
+
+    }
+
+    .gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .photo-card img{
+
+        height:350px;
+
+    }
+
+    .message-container{
+
+        padding:25px;
+
+    }
+
+    .envelope{
+
+        width:250px;
+
+    }
+
+}
+
+
+/* ================= CONFETTI ================= */
+
+.confetti{
+
+    position:fixed;
+
+    width:10px;
+
+    height:10px;
+
+    top:-20px;
+
+    z-index:6000;
+
+    animation:fall linear forwards;
+
+}
+
+@keyframes fall{
+
+    to{
+
+        transform:
+        translateY(110vh)
+        rotate(720deg);
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     NAVBAR
+     ================================================== -->
+
+<nav>
+
+    <div class="logo">
+        🎀 Rakhi ❤️
+    </div>
+
+    <div>
+
+        <a href="#home">Home</a>
+
+        <a href="#message">Message</a>
+
+        <a href="#gallery">Memories</a>
+
+        <a href="#letter">Letter</a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ==================================================
+     HERO
+     ================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="floating f1">🌸</div>
+
+    <div class="floating f2">❤️</div>
+
+    <div class="floating f3">✨</div>
+
+    <div class="floating f4">🎀</div>
+
+    <div class="floating f5">🌺</div>
+
+
+    <div class="hero-content">
+
+        <div class="rakhi-icon">
+            🪷
+        </div>
+
+        <h1>
+            Happy Raksha Bandhan
+        </h1>
+
+        <h2>
+            To The Best Sisters ❤️
+        </h2>
+
+        <p>
+
+            Some relationships are made by birth,
+            but some become special because of love,
+            care, memories and endless fights. 😄
+
+        </p>
+
+        <a href="#message" class="btn">
+
+            💌 Read My Message
+
+        </a>
+
+
+        <button class="btn"
+        onclick="startSurprise()">
+
+            🎁 Surprise
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MESSAGE
+     ================================================== -->
+
+<section id="message">
+
+    <h2 class="section-title">
+
+        💖 A Special Message
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        A small message for the most special person
+
+    </p>
+
+
+    <div class="message-container">
+
+        <p>
+
+            Dear Brother/Sister ❤️
+
+            <br><br>
+
+            Raksha Bandhan is not only about tying a Rakhi.
+            It is about celebrating a bond that becomes stronger
+            with every passing year.
+
+            <br><br>
+
+            We may fight over small things,
+            tease each other and sometimes annoy each other 😄,
+            but at the end of the day,
+            you will always be one of the most important people
+            in my life.
+
+            <br><br>
+
+            Thank you for all the memories,
+            laughter, support and unforgettable moments.
+
+            <br><br>
+
+            <b>
+                Happy Raksha Bandhan! ❤️🎀
+            </b>
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PHOTO GALLERY
+     ================================================== -->
+
+<section id="gallery">
+
+    <h2 class="section-title">
+
+        📸 Our Memories
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Our beautiful memories ❤️
+
+    </p>
+
+
+    <div class="gallery" id="galleryContainer">
+
+        <!--
+        ==================================================
+        PHOTO LIST
+
+        YAHAN SIRF PHOTO KA NAAM ADD KARNA HAI.
+
+        JITNI PHOTOS CHAHO ADD KAR SAKTE HO.
+
+        Example:
+
+        "photo1.jpg",
+        "photo2.jpg",
+        "photo3.jpg"
+
+        ==================================================
+        -->
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     MEMORY CARDS
+     ================================================== -->
+
+<section>
+
+    <h2 class="section-title">
+
+        ✨ Why You Are Special
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Because every sibling bond has its own story
+
+    </p>
+
+
+    <div class="memories">
+
+
+        <div class="memory-card">
+
+            <span>
+                😂
+            </span>
+
+            <h3>
+                Endless Fun
+            </h3>
+
+            <p>
+
+                From silly jokes to crazy moments,
+                there is never a boring day together.
+
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <span>
+                🤝
+            </span>
+
+            <h3>
+                Always Supportive
+            </h3>
+
+            <p>
+
+                No matter what happens,
+                we always stand beside each other.
+
+            </p>
+
+        </div>
+
+
+        <div class="memory-card">
+
+            <span>
+                ❤️
+            </span>
+
+            <h3>
+                Forever Bond
+            </h3>
+
+            <p>
+
+                Distance and time can never change
+                this beautiful relationship.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LETTER
+     ================================================== -->
+
+<section id="letter">
+
+    <h2 class="section-title">
+
+        💌 Secret Letter
+
+    </h2>
+
+
+    <p class="section-subtitle">
+
+        Click the envelope to open your special message
+
+    </p>
+
+
+    <div class="letter-box">
+
+
+        <div class="envelope"
+        onclick="openLetter()">
+
+            <div class="heart">
+
+                ❤️
+
+            </div>
+
+        </div>
+
+
+        <div class="letter"
+        id="letterText">
+
+            <h2>
+                Dear Sibling ❤️
+            </h2>
+
+            <p>
+
+                Life becomes more beautiful when you have
+                someone who knows all your secrets,
+                remembers your childhood,
+                fights with you,
+                and still cares about you.
+
+            </p>
+
+
+            <br>
+
+
+            <p>
+
+                I hope our bond always remains this strong
+                and every Raksha Bandhan brings new memories.
+
+            </p>
+
+
+            <br>
+
+
+            <h3>
+
+                Happy Raksha Bandhan! 🎀❤️
+
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SURPRISE
+     ================================================== -->
+
+<section>
+
+    <div class="surprise">
+
+        <h2 class="section-title">
+
+            🎁 One Last Surprise
+
+        </h2>
+
+
+        <p>
+
+            Are you ready?
+
+        </p>
+
+
+        <button class="btn"
+        onclick="showSurprise()">
+
+            ✨ Open Surprise
+
+        </button>
+
+
+        <div id="surpriseText">
+
+            You are not just my sibling... ❤️
+
+            <br>
+
+            You are my forever partner in crime! 😄🎀
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+     ================================================== -->
+
+<footer>
+
+    Made with ❤️ for Raksha Bandhan
+
+    <br><br>
+
+    <span>
+
+        Forever Brothers & Sisters 🎀
+
+    </span>
+
+</footer>
+
+
+
+<!-- ==================================================
+     MUSIC
+     ================================================== -->
+
+<audio id="music" loop>
+
+    <source
+    src="rakhi-music.mp3"
+    type="audio/mpeg">
+
+</audio>
+
+
+<button
+class="music-btn"
+onclick="toggleMusic()"
+id="musicButton">
+
+    🎵
+
+</button>
+
+
+
+<!-- ==================================================
+     IMAGE LIGHTBOX
+     ================================================== -->
+
+<div
+class="lightbox"
+id="lightbox"
+onclick="closeImage()">
+
+    <span class="close-lightbox">
+        ×
+    </span>
+
+    <img
+    id="lightboxImage"
+    src=""
+    alt="Full Image">
+
+</div>
+
+
+
+<script>
+
+
+/* ==================================================
+   PHOTO LIST
+
+   BAS YAHAN PHOTO KE NAAM LIKHNA HAI.
+
+   JITNI PHOTOS CHAHO ADD KAR SAKTE HO.
+
+   ================================================== */
+
+
+const photos = [
+
+    "image1.jpeg",
+    "image2.jpeg",
+    "image3.jpeg",
+    "image4.jpeg",
+    "image5.jpeg",
+    "image6.jpeg",
+    "image7.jpeg",
+    "image8.jpeg",
+    "image9.jpeg",
+    "image10.jpeg",
+    "image11.jpeg",
+    "image12.jpeg",
+    "image13.jpeg",
+    "image14.jpeg",
+    "image15.jpeg"
+
+];
+
+
+/* ==================================================
+   CREATE PHOTO GALLERY AUTOMATICALLY
+   ================================================== */
+
+
+const gallery =
+document.getElementById("galleryContainer");
+
+
+photos.forEach((photo,index)=>{
+
+
+    const card =
+    document.createElement("div");
+
+    card.className =
+    "photo-card";
+
+
+    card.innerHTML = `
+
+        <img
+        src="${photo}"
+        alt="Memory ${index+1}"
+        onclick="openImage(this.src)">
+
+        <p>
+            Beautiful Memory ❤️
+        </p>
+
+    `;
+
+
+    gallery.appendChild(card);
+
+
+});
+
+
+
+/* ==================================================
+   MUSIC
+   ================================================== */
+
+
+let music =
+document.getElementById("music");
+
+
+let musicButton =
+document.getElementById("musicButton");
+
+
+function toggleMusic(){
+
+
+    if(music.paused){
+
+        music.play();
+
+        musicButton.innerHTML =
+        "🔊";
+
+    }
+
+    else{
+
+        music.pause();
+
+        musicButton.innerHTML =
+        "🎵";
+
+    }
+
+}
+
+
+
+/* ==================================================
+   LETTER
+   ================================================== */
+
+
+function openLetter(){
+
+
+    let letter =
+    document.getElementById("letterText");
+
+
+    letter.classList.toggle("show");
+
+}
+
+
+
+/* ==================================================
+   SURPRISE
+   ================================================== */
+
+
+function showSurprise(){
+
+
+    let text =
+    document.getElementById("surpriseText");
+
+
+    text.style.display =
+    "block";
+
+
+    createConfetti();
+
+}
+
+
+
+/* ==================================================
+   CONFETTI
+   ================================================== */
+
+
+function createConfetti(){
+
+
+    for(let i=0;i<80;i++){
+
+
+        let confetti =
+        document.createElement("div");
+
+
+        confetti.classList.add(
+            "confetti"
+        );
+
+
+        confetti.innerHTML =
+        [
+            "❤️",
+            "🌸",
+            "✨",
+            "🎀",
+            "🌺",
+            "💖"
+        ][
+            Math.floor(
+                Math.random()*6
+            )
+        ];
+
+
+        confetti.style.left =
+        Math.random()*100 + "vw";
+
+
+        confetti.style.fontSize =
+        (12 + Math.random()*20) + "px";
+
+
+        confetti.style.animationDuration =
+        (2 + Math.random()*4) + "s";
+
+
+        document.body.appendChild(
+            confetti
+        );
+
+
+        setTimeout(()=>{
+
+            confetti.remove();
+
+        },6000);
+
+
+    }
+
+}
+
+
+
+/* ==================================================
+   HERO SURPRISE
+   ================================================== */
+
+
+function startSurprise(){
+
+
+    document
+    .getElementById("gallery")
+    .scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+
+    createConfetti();
+
+}
+
+
+
+/* ==================================================
+   IMAGE LIGHTBOX
+   ================================================== */
+
+
+function openImage(src){
+
+
+    let lightbox =
+    document.getElementById(
+        "lightbox"
+    );
+
+
+    let image =
+    document.getElementById(
+        "lightboxImage"
+    );
+
+
+    image.src = src;
+
+
+    lightbox.style.display =
+    "flex";
+
+
+}
+
+
+
+/* ==================================================
+   CLOSE IMAGE
+   ================================================== */
+
+
+function closeImage(){
+
+
+    document
+    .getElementById("lightbox")
+    .style.display =
+    "none";
+
+
+}
+
+
+
+/* ==================================================
+   INITIAL CONFETTI
+   ================================================== */
+
+
+setTimeout(()=>{
+
+    createConfetti();
+
+},1500);
+
+
+</script>
+
+
+</body>
+
+</html>
